@@ -1,6 +1,6 @@
 package com.example.genaiapi.config;
 
-import org.springframework.beans.factory.annotations.Value;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.client.RestTemplate;
@@ -15,7 +15,7 @@ import lombok.Getter;
 public class GeminiConfig {
 
     @Value("${gemini.api.key:}")
-    private String apikey;
+    private String apiKey;
     /*
      * Inject the value of the property named gemini.api.key from
      * application.properties (or from an environment variable if one is set).
